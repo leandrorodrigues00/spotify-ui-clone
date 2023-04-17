@@ -1,8 +1,10 @@
 import {
+  Heart,
   Laptop2,
   LayoutList,
   Maximize2,
   Mic2,
+  PictureInPicture2,
   Play,
   Repeat,
   Shuffle,
@@ -14,10 +16,10 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-zinc-900 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
+    <footer className="bg-zinc-900 border-t border-zinc-700 px-6 py-4 flex items-center justify-between fixed w-screen bottom-0 ">
       <div className="flex items-center gap-3">
         <Image
-          src="/bestAlbum.jpg"
+          src="/myAlbumsCovers/breaking-benjamin.jpg"
           alt="Capa do Album Phobia da banda Breaking Benjamin"
           width={56}
           height={56}
@@ -26,6 +28,11 @@ export function Footer() {
         <div className="flex flex-col">
           <strong className="font-normal">The Diary of Jane</strong>
           <span className="text-xs text-zinc-500">Breaking Benjamin</span>
+        </div>
+
+        <div className="flex gap-3 ml-8">
+          <Heart size={18} className="text-zinc-200" />
+          <PictureInPicture2 size={18} className="text-zinc-200" />
         </div>
       </div>
       <div className="flex flex-col items-center gap-2">
@@ -41,7 +48,7 @@ export function Footer() {
 
         <div className="flex items-center gap-2">
           <span className="text-xs text-zinc-400">0:31</span>
-          <div className="h-1 rounded-full w-96 bg-zinc-600">
+          <div className="h-1 rounded-full w-[624px] bg-zinc-600">
             <div className="bg-zinc-200 w-40 h-1 rounded-full"></div>
           </div>
           <span className="text-xs text-zinc-400">2:14</span>
