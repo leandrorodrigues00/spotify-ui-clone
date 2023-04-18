@@ -30,7 +30,7 @@ export function Footer() {
           <span className="text-xs text-zinc-500">Breaking Benjamin</span>
         </div>
 
-        <div className="flex gap-3 ml-8">
+        <div className="flex gap-3 ml-3 md:ml-8">
           <Heart size={18} className="text-zinc-200" />
           <PictureInPicture2 size={18} className="text-zinc-200" />
         </div>
@@ -48,13 +48,13 @@ export function Footer() {
 
         <div className="flex items-center gap-2">
           <span className="text-xs text-zinc-400">0:31</span>
-          <div className="h-1 rounded-full w-[624px] bg-zinc-600">
+          <div className="h-1 rounded-full w-[200px] md:w-[424px] lg:w-[624px] bg-zinc-600">
             <div className="bg-zinc-200 w-40 h-1 rounded-full"></div>
           </div>
           <span className="text-xs text-zinc-400">2:14</span>
         </div>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="hidden xl:flex items-center gap-4 ">
         <Mic2 size={20} />
         <LayoutList size={20} />
         <Laptop2 size={20} />

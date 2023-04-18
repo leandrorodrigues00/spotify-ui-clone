@@ -17,7 +17,7 @@ export function Main() {
 
       <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
 
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 ">
         {musicAlbuns.map((album, index) => (
           <a
             key={index}
@@ -42,7 +42,7 @@ export function Main() {
         Made for Leandro Rodrigues
       </h2>
 
-      <div className="grid grid-cols-8 gap-6 mt-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-6 mt-4">
         {randomAlbuns.map((albuns, index) => (
           <a
             key={index}
@@ -66,7 +66,7 @@ export function Main() {
 
       <h2 className="font-semibold text-2xl mt-10">recently played</h2>
 
-      <div className="grid grid-cols-8 gap-6 mt-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-6 mt-4">
         {Array(8)
           .fill(null)
           .map((_, index) => (
