@@ -33,14 +33,14 @@ export function SiderBar() {
         </a>
       </nav>
 
-      <button className="flex  gap-3  text-sm font-semibold text-[#b3b3b3] mt-10">
+      <button className="flex items-center gap-3  text-sm font-semibold text-[#b3b3b3] mt-10">
         <div className="bg-[#b3b3b3] rounded-sm w-6 h-6  flex items-center justify-center ">
           <Plus size={18} className="text-zinc-200 fill-current" />
         </div>
         Create a playlist
       </button>
 
-      <button className="flex  gap-3  text-sm font-semibold text-[#b3b3b3] mt-5">
+      <button className="flex items-center gap-3 text-sm font-semibold text-[#b3b3b3] mt-5">
         <div className="bg-gradient-to-br from-purple-900 to-green-200   rounded-sm w-6 h-6  flex items-center justify-center ">
           <Heart size={12} className="text-zinc-200 fill-current" />
         </div>
